@@ -26,6 +26,7 @@ spec:
           {{- if .Values.ingress.ingressClassName }}
           class: "{{ .Values.ingress.ingressClassName }}"
           {{- end }}
+          ingressTemplate: {}
 
 ---
 # Private CA (epinio-ca) issuer
