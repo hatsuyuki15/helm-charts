@@ -26,11 +26,6 @@ spec:
           {{- if .Values.ingress.ingressClassName }}
           class: "{{ .Values.ingress.ingressClassName }}"
           {{- end }}
-          ingressTemplate:
-            metadata:
-              annotations:
-                traefik.ingress.kubernetes.io/router.entrypoints: websecure
-                traefik.ingress.kubernetes.io/router.tls: "true"
 
 ---
 # Private CA (epinio-ca) issuer
